@@ -36,31 +36,69 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        dieDaiMerge();
+        //dieDaiMerge();
         baoLiMerge();
     }
 
     private static void baoLiMerge() {
         ListNode l1 = createNodeList1();
-        System.out.println("链表l1: "+l1);
+        System.out.println("链表l1: " + l1);
         ListNode l2 = createNodeList2();
-        System.out.println("链表l2: "+l2);
+        System.out.println("链表l2: " + l2);
         ListNode l = baoLiMergeTwoList(l1, l2);
-        System.out.println("合并后的链表： "+l);
+        System.out.println("合并后的链表： " + l);
     }
 
     private static ListNode baoLiMergeTwoList(ListNode l1, ListNode l2) {
+        //暴力合并两个链表的思路
+        //1.创建一个哑结点，一个临时指针指向哑结点，两个指针分别指向l1和l2节点的头部
+        //判断l1和l2链表是否为空
+        //2.比较l1和l2头结点的大小
+        //3.l1和l2较小的指针后移，临时节点后移
+        //4.遍历剩余的链表节点
+        //返回新生成的链表
 
-        return null;
+        ListNode l = new ListNode(-1);
+        //临时指针指向哑结点
+        ListNode temp = l;
+        //l1和l2都不为空的情况
+        while (l1 != null && l2 != null) {
+            //比较头结点的大小
+            if (l1.val < l2.val) {
+                //临时指针指向l1
+                temp.next = l1;
+                //指向l1链表的指针后移，控制循环的判断条件
+                l1 = l1.next;
+                //指向哑结点得临时指针后移
+                temp = temp.next;
+            } else {
+                //临时指针指向l2
+                temp.next = l2;
+                //指向l2链表的指针后移
+                l2 = l2.next;
+                //临时指针后移
+                temp = temp.next;
+            }
+        }
+        if (l1 == null) {
+            //temp指向剩下的l2链表
+            temp.next = l2;
+        }
+        if (l2 == null) {
+            //temp指向剩下的l1链表
+            temp.next = l1;
+        }
+        //返回哑结点的next（去除哑结点的新链表）
+        return l.next;
     }
 
     private static void dieDaiMerge() {
         ListNode l1 = createNodeList1();
-        System.out.println("链表l1: "+l1);
+        System.out.println("链表l1: " + l1);
         ListNode l2 = createNodeList2();
-        System.out.println("链表l2: "+l2);
+        System.out.println("链表l2: " + l2);
         ListNode l = mergeTwoLists(l1, l2);
-        System.out.println("合并后的链表： "+l);
+        System.out.println("合并后的链表： " + l);
     }
 
     private static ListNode createNodeList2() {
