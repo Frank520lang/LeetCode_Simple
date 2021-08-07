@@ -7,6 +7,7 @@ public class BubbleSort {
         int arr[]={1,5,9,4,6,2,7,};
         testBubbleSort(arr);
         printArr(arr);
+        printArr(arr);
     }
 
     private static void printArr(int[] arr) {
