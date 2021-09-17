@@ -1,4 +1,4 @@
-package simple;
+package simple.datastructure;
 
 //冒泡排序
 public class BubbleSort {
