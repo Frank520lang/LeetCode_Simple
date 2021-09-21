@@ -20,9 +20,9 @@ public class FeiBoNaLie {
         // TODO Auto-generated method stub
         int count = 0;
         for (int j = 2; j <= i; j++) {
-            boolean flag =Prime(j);
+            boolean flag = Prime(j);
             if (!flag) {
-                System.out.print(j+" , ");
+                System.out.print(j + " , ");
                 count++;
             }
 
@@ -64,7 +64,7 @@ public class FeiBoNaLie {
 
     // 打印斐波那契数列
     public static void printFeiBO(int num) {
-        System.out.println("斐波那契数列的前："+num+" 项");
+        System.out.println("斐波那契数列的前：" + num + " 项");
         for (int i = 0; i < num; i++) {
             System.out.print(FeiBo(i) + " , ");
         }

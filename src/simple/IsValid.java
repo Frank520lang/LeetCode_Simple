@@ -28,7 +28,8 @@ public class IsValid {
             else if (stack.empty() || c != stack.pop())
                 return false;
             else//stack.empty()和stack.pop()会隐含执行
-                System.out.println("运行到这里");;
+                System.out.println("运行到这里");
+            ;
         }
         if (stack.empty())
             return true;

@@ -35,6 +35,6 @@ public class MaxSubArray {
 
     private static void test1() {
         int nums[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-        System.out.println("最大子序列和为："+baoLiMaxSubArray(nums));
+        System.out.println("最大子序列和为：" + baoLiMaxSubArray(nums));
     }
 }

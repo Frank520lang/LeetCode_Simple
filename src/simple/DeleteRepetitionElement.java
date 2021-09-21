@@ -1,13 +1,9 @@
 package simple;
 
-/**
- * @author Administrator
- * @date 2020/12/07
- */
 //题目:原地删除排序数组中的重复项
 public class DeleteRepetitionElement {
     public int deleteRepetitionElement(int[] arr) {
-         // 判断数组是否为空
+        // 判断数组是否为空
         if (arr.length == 0) {
             return 0;
         }
