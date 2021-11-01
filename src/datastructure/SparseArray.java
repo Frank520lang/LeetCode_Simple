@@ -1,4 +1,4 @@
-package simple.datastructure;
+package datastructure;
 
 public class SparseArray {
     public static void main(String[] args) {

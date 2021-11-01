@@ -1,4 +1,4 @@
-package simple.datastructure;
+package datastructure;
 
 public class TestInsertSort {
     public static void main(String[] args) {
