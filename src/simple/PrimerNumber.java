@@ -10,7 +10,7 @@ import java.util.Scanner;
 /*
  * 素数的定义:素数只有两个因子1和本身
  * 判断素数的几种方法
- * */
+ */
 public class PrimerNumber {
     public static void main(String[] args) {
         while (true) {

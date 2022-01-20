@@ -26,7 +26,7 @@ public class IsPalindrome {
          * 1233 12
          * 123 123
          */
-        // 边界条件
+        // 边界条件,循环条件
         while (x > palindrome) {
             // palindrome与x的关系
             palindrome = palindrome * 10 + x % 10;
