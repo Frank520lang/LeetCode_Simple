@@ -12,10 +12,16 @@ public class IsPalindrome {
         System.out.println("1232:" + isPalindrome(1232));
         System.out.println("03445:" + isPalindrome(03445));
         System.out.println("-123321:" + isPalindrome(-123321));
+        System.out.println("10:" + isPalindrome(10));
+        System.out.println("0:" + isPalindrome(0));
+
     }
 
     public static boolean isPalindrome(int x) {
-        if (x < 0) {
+        if (x == 0) {
+            return true;
+        }
+        if (x < 0 || x % 10 == 0) {
             return false;
         }
         int palindrome = 0;
