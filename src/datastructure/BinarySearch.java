@@ -8,7 +8,6 @@ public class BinarySearch {
     int cat = testBinarySearch(arr, value);
     System.out.println("二分查找：" + cat);
   }
-
   /*
    * 二分查找的临界条件(low<hight)
    */
@@ -16,6 +15,7 @@ public class BinarySearch {
     int length = arr.length;
     int low = 0;
     int hight = length - 1;
+    //当hight>=low时结束循环
     while (low < hight) {
       int mid = (low + hight) / 2;
       int flag = arr[mid];
