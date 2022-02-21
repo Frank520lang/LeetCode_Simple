@@ -12,10 +12,11 @@ public class LengthOfLastWord {
         int j = testLengthOfLastWordBySubString(s);
         System.out.println(j);
     }
-
+    //反向遍历字符，
     private static int testLengthOfLastWordBySubString(String s) {
         int index=s.length()-1;
         //排除排除空字符
+        //多个空字符用循环，单个字符用if语句
         while(s.charAt(index)==' '){
             index--;
         }
