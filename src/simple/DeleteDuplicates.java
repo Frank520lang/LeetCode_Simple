@@ -1,5 +1,8 @@
 package simple;
 
+/**
+ * @author Administrator
+ */
 public class DeleteDuplicates {
 
     public static void main(String[] args) {
