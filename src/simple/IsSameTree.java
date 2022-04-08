@@ -5,6 +5,9 @@ import util.TreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * @author Administrator
+ */
 public class IsSameTree {
     public static void main(String[] args) {
         TreeNode head = new TreeNode(1);
@@ -30,8 +33,10 @@ public class IsSameTree {
         //System.out.println("深度优先："+flag1+"\n"+"广度优先："+flag2);
     }
 
-    //广度优先
-    //一层一层遍历
+    /**
+      广度优先
+      一层一层遍历
+     */
     private static boolean testIsSameTreeByWide(TreeNode p, TreeNode q) {
         //节点先判空
         if (p == null && q == null) {
@@ -96,8 +101,10 @@ public class IsSameTree {
         return queue1.isEmpty() && queue2.isEmpty();
     }
 
-    //深度优先
-    //先遍历完左节点
+    /**
+     * 深度优先
+     * 先遍历完左节点
+     * */
     private static boolean testIsSameTreeByDeep(TreeNode p, TreeNode q) {
         //两颗树都为空
         if (p == null && q == null) {
