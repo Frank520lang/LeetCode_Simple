@@ -1,10 +1,9 @@
 package simple;
 
-import util.TestTree;
+import util.CreateTrees;
 import util.TreeNode;
 
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.Queue;
 
 /**
@@ -13,7 +12,7 @@ import java.util.Queue;
  */
 public class IsSymmetric {
     public static void main(String[] args) {
-        TestTree testTree = new TestTree();
+        CreateTrees testTree = new CreateTrees();
         TreeNode root = testTree.SYMTree();
 
         boolean b1 = IsSymmetricByRecursion(root, root);

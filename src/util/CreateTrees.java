@@ -7,7 +7,7 @@ import java.util.Map;
  * @author : Frank
  * @date : 2022/4/8 12:32
  */
-public class TestTree {
+public class CreateTrees {
 
     /**
      *创建一颗用于测试相同的树
