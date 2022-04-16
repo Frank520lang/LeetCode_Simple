@@ -7,19 +7,18 @@ package base;
  */
 public class Test22222 {
     public static void main(String[] args) {
-        test(2,5);
+        System.out.println(test(2,5));
     }
 
     private static int test(int p, int q) {
+        int an=p;
+        int n=0;
         int sum=0;
-        int a=2;
-        int n=1;
-        int result=0;
         for (int j = 0; j <q ; j++) {
-            sum=sum+a*n;
-            result=result+sum;
+            an=an+2*n;
+            sum=sum+an;
             n= (int) Math.pow(10,j+1);
         }
-        return result;
+        return sum;
     }
 }
