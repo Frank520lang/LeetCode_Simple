@@ -10,10 +10,9 @@ import java.util.Map;
 public class CreateTrees {
 
     /**
-     *创建一颗用于测试相同的树
-     *
-     *  */
-    public  Map SameTree() {
+     * 创建一颗用于测试相同的树
+     */
+    public Map SameTree() {
         Map treeNodeMap = new HashMap<Integer, TreeNode>();
         TreeNode head = new TreeNode(1);
         TreeNode left = new TreeNode(2);
@@ -37,10 +36,11 @@ public class CreateTrees {
 
 
     }
-/**
-* 对称二叉树
-* */
-    public TreeNode SYMTree(){
+
+    /**
+     * 对称二叉树
+     */
+    public TreeNode SYMTree() {
         TreeNode head = new TreeNode(1);
         TreeNode left = new TreeNode(2);
         TreeNode right = new TreeNode(2);
@@ -50,11 +50,27 @@ public class CreateTrees {
         TreeNode right2 = new TreeNode(3);
         head.left = left;
         head.right = right;
-        left.left=left1;
-        left.right=right1;
-        right.left=left2;
-        right.right=right2;
+        left.left = left1;
+        left.right = right1;
+        right.left = left2;
+        right.right = right2;
         return head;
     }
-
+    /**
+     * 二叉树的最大深度
+     * */
+    public TreeNode MaxDepthTree() {
+        TreeNode head = new TreeNode(3);
+        TreeNode t1 = new TreeNode(9);
+        TreeNode t2 = new TreeNode(20);
+        TreeNode t3 = new TreeNode();
+        TreeNode t4 = new TreeNode();
+        TreeNode t5 = new TreeNode(15);
+        TreeNode t6 = new TreeNode(17);
+        head.left = t1;
+        head.right = t2;
+        t2.left = t5;
+        t2.right = t6;
+        return head;
+    }
 }
